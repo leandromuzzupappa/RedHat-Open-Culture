@@ -1,0 +1,818 @@
+/* HEADER */
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotacionreversa {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes escala {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1);
+  }
+}
+@keyframes nubes01 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-307px);
+  }
+}
+@keyframes nubes02 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(256px);
+  }
+}
+header {
+  background: center no-repeat #001d26;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .encabezado {
+  padding: 0 0 0px;
+  margin-top: -100px;
+}
+header .encabezado h1 {
+  font-size: 111px;
+  letter-spacing: 5.55px;
+  line-height: 0.9em;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin-top: 0px;
+}
+header .encabezado h1 strong {
+  color: #D60707;
+  font-weight: 900;
+}
+header .encabezado .columna.titulo {
+  width: 42%;
+  text-align: left;
+}
+header .encabezado .columna.titulo p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.95px;
+  color: #FFFFFF;
+}
+header .encabezado .columna.grafico {
+  width: 58%;
+  text-align: right;
+}
+header .encabezado .columna.grafico svg {
+  width: 740px;
+  height: 725px;
+}
+header .encabezado .columna.grafico svg .st0 {
+  opacity: 0.3;
+  fill: #1A1A1A;
+}
+header .encabezado .columna.grafico svg .st1 {
+  fill: #A3DBE8;
+}
+header .encabezado .columna.grafico svg .st2 {
+  fill: #CC0000;
+}
+header .encabezado .columna.grafico svg .st3 {
+  fill: #005872;
+}
+header .encabezado .columna.grafico svg .st4 {
+  fill: #231F20;
+}
+header .encabezado .columna.grafico svg .st5 {
+  fill: #FFFFFF;
+}
+header .encabezado .columna.grafico svg .st6 {
+  fill: #E8F6F9;
+}
+header .encabezado .columna.grafico svg .st7 {
+  fill: #001115;
+}
+header .encabezado .columna.grafico svg .st8 {
+  fill: #B50000;
+}
+header .encabezado .columna.grafico svg .st9 {
+  fill: #E0E0E0;
+}
+header .encabezado .columna.grafico svg .st10 {
+  fill: #004254;
+}
+header .encabezado .columna.grafico svg .st11 {
+  fill: #32303A;
+}
+header .encabezado .columna.grafico svg .st12 {
+  fill: #C4C4C4;
+}
+header .encabezado .columna.grafico svg .st13 {
+  clip-path: url(#SVGID_2_);
+  fill: #001115;
+}
+header .encabezado .columna.grafico svg .st14 {
+  clip-path: url(#SVGID_2_);
+  fill: #FFFFFF;
+}
+header .encabezado .columna.grafico svg .st15 {
+  fill: #AA0000;
+}
+header .encabezado .columna.grafico svg .circulitos {
+  transform-origin: 371px 362px;
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 70s;
+  animation-name: rotacion;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+header .encabezado .columna.grafico svg .lineapunteada {
+  transform-origin: 371px 362px;
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 100s;
+  animation-name: rotacion;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+header .encabezado .columna.grafico svg .lupa {
+  transform-origin: 371px 362px;
+}
+header .encabezado .columna.grafico svg .circulo {
+  transform-origin: 371px 362px;
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 40s;
+  animation-name: rotacion;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+header .encabezado .columna.grafico svg .circulo .avatar {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  -webkit-animation-name: rotacionreversa;
+  -webkit-animation-duration: 40s;
+  animation-name: rotacionreversa;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+header .encabezado .columna.grafico svg .circulosfondo {
+  transform-origin: 371px 362px;
+  -webkit-animation-name: escala;
+  -webkit-animation-duration: 5s;
+  animation-name: escala;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#about {
+  background: right bottom no-repea #f3fcff;
+  padding: 0px 0px;
+}
+#about .col01 {
+  width: 30%;
+  text-align: left;
+}
+#about .col01 svg {
+  width: 450px;
+  height: 375px;
+}
+#about .col01 svg .st0 {
+  opacity: 1e;
+  fill: #004254;
+}
+#about .col01 svg .st1 {
+  fill: #A3DBE8;
+}
+#about .col01 svg .st2 {
+  fill: #CC0000;
+}
+#about .col01 svg .st3 {
+  fill: #FFFFFF;
+}
+#about .col01 svg .st4 {
+  fill: #E8F6F9;
+}
+#about .col01 svg .st5 {
+  fill: #AA0000;
+}
+#about .col01 svg .st6 {
+  fill: #001115;
+}
+#about .col01 svg .st7 {
+  fill: #004254;
+}
+#about .col01 svg .st8 {
+  fill: #F3FCFF;
+}
+#about .col01 svg .st9 {
+  fill: #E6E6E6;
+}
+#about .col01 svg .nubes {
+  -webkit-animation-name: nubes01;
+  -webkit-animation-duration: 10s;
+  animation-name: nubes01;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#about .col01 svg .circulos01 {
+  transform-origin: 329px 184px;
+  -webkit-animation-name: rotacionreversa;
+  -webkit-animation-duration: 10s;
+  animation-name: rotacionreversa;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#about .col01 svg .circulos02 {
+  transform-origin: 171px 196px;
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 15s;
+  animation-name: rotacion;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#about .col02 {
+  width: 33%;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+#about .col02 p:first-child {
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 0.88px;
+  color: #3D5156;
+  font-weight: 300;
+}
+#about .col02 p:first-child strong {
+  color: #cc0000;
+  font-weight: 700;
+}
+#about .col02 p:last-child {
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.9px;
+  color: #566D72;
+  font-weight: 300;
+}
+#about .col02 p:last-child strong {
+  color: #004254;
+  font-weight: 700;
+}
+#about .col03 {
+  width: 33%;
+  text-align: left;
+  background: #FFFFFF;
+  height: 450px;
+  padding: 0 50px;
+  padding-top: 70px;
+}
+#about .col03 img {
+  width: 300px;
+}
+#about .col03 p {
+  font-size: 19px;
+  line-height: 31px;
+  letter-spacing: 0.76px;
+  color: #3D5156;
+  font-weight: 300;
+}
+#about .col03 p strong {
+  color: #cc0000;
+  font-weight: 700;
+}
+#destacados {
+  padding: 100px 0;
+  background: center repeat;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+#destacados h3 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  line-height: 60.48px;
+  letter-spacing: 2.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 25px;
+  font-weight: 900;
+}
+#destacados #contenedor {
+  width: 100%;
+  padding-left: 180px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+}
+#destacados .destacadostabla {
+  display: table;
+  border-collapse: separate;
+  position: relative;
+  transition: all 0.3s;
+}
+#destacados .bloquecontainer {
+  display: inline-block;
+  vertical-align: middle;
+  width: 486px;
+  min-height: 500px;
+  vertical-align: top;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  /*DESTACADOS PORTADAS*/
+}
+#destacados .bloquecontainer .info {
+  padding: 10px 50px;
+  vertical-align: middle;
+  background: #FFFFFF;
+}
+#destacados .bloquecontainer .info h4 {
+  font-size: 20px;
+  line-height: 31.23px;
+  letter-spacing: 0.5px;
+  color: #004254;
+  font-weight: 800;
+}
+#destacados .bloquecontainer .info h4 strong {
+  font-weight: 800;
+  color: #cc0000;
+}
+#destacados .bloquecontainer .info p {
+  font-size: 14px;
+  line-height: 23px;
+  min-height: 155px;
+  letter-spacing: 0.32px;
+  color: #3D5156;
+  font-weight: 300;
+}
+#destacados .bloquecontainer .info a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #cc0000;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+#destacados .bloquecontainer .info a:hover {
+  background: #000000;
+}
+#destacados .bloquecontainer .slider-img {
+  width: 100%;
+  height: 250px;
+  background: #566D72;
+}
+#destacados .bloquecontainer #destacados-portada-1 {
+  background: url(../diversidad-e-inclusion/images/slider/01.jpg) center center no-repeat;
+  background-size: cover;
+}
+#destacados .bloquecontainer #destacados-portada-2 {
+  background: url(../diversidad-e-inclusion/images/slider/02.jpg) center center no-repeat;
+  background-size: cover;
+}
+#destacados .bloquecontainer #destacados-portada-3 {
+  background: url(../diversidad-e-inclusion/images/slider/03.jpg) center center no-repeat;
+  background-size: cover;
+}
+#destacados .slider-botones button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 999;
+  background: #000000;
+  stroke: #FFFFFF;
+  border: 0px;
+  border-radius: 100px;
+  transition: 0.1s;
+}
+#destacados .slider-botones button svg {
+  vertical-align: top;
+  text-align: left;
+}
+#destacados .slider-botones button:hover {
+  background: #FFFFFF;
+  stroke: #D60707;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+#destacados .slider-atras {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+}
+#destacados .slider-adelante {
+  position: absolute;
+  top: 45%;
+  right: 2%;
+}
+#candidatos {
+  background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 750px top no-repeat, #00212A;
+  background-size: contain, cover;
+  padding: 0px 0px;
+}
+#candidatos .col01 {
+  width: 33%;
+  text-align: left;
+  background: #00212A;
+}
+#candidatos .col01 h3 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 41px;
+  line-height: 49,2px;
+  letter-spacing: 2.05px;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+#candidatos .col01 h3 strong {
+  color: #cc0000;
+}
+#candidatos .col01 p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.76px;
+  color: #FFFFFF;
+}
+#candidatos .col02 {
+  width: 33%;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+#candidatos .col02 p:first-child {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  color: #3D5156;
+  font-weight: 300;
+}
+#candidatos .col02 p:first-child strong {
+  color: #cc0000;
+  font-weight: 700;
+}
+#candidatos .col02 p:last-child {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  color: #566D72;
+  font-weight: 300;
+}
+#candidatos .col02 p:last-child strong {
+  color: #004254;
+  font-weight: 700;
+}
+#candidatos .col03 {
+  width: 25%;
+  text-align: left;
+  background: rgba(163, 219, 232, 0.7);
+  height: 450px;
+  padding: 0 50px;
+  padding-top: 142px;
+}
+#candidatos .col03 h4 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 29px;
+  line-height: 53.17px;
+  letter-spacing: 2.17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin-left: 15px;
+}
+#candidatos .col03 h4 span {
+  display: inline;
+  background: #004254;
+  padding: 9px 0px 6px;
+  box-shadow: 15px 0 0 #004254, -15px 0 0 #004254;
+  box-decoration-break: clone;
+}
+#candidatos .col03 a {
+  display: inline-block;
+  background: #D60707;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: all 0.1s;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+#candidatos .col03 a:hover {
+  background: #000000;
+  color: #D60707;
+}
+@media (max-width: 1700px) {
+  #about {
+    background: right bottom no-repea #f3fcff;
+    padding: 0px 0px;
+  }
+  #about .col01 {
+    width: 25%;
+  }
+  #about .col02 {
+    width: 33%;
+  }
+  #about .col03 {
+    width: 33%;
+  }
+}
+@media (max-width: 1500px) {
+  header .encabezado .columna.grafico svg {
+    width: 600px;
+    height: 588px;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 500px top no-repeat, #00212A;
+  }
+  #candidatos .col01 {
+    width: 28%;
+  }
+  #candidatos .col01 h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  #candidatos .col01 p {
+    font-size: 16px;
+  }
+  #candidatos .col03 h4 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1400px) {
+  header .encabezado h1 {
+    font-size: 90px;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 450px top no-repeat, #00212A;
+  }
+  #candidatos .col03 h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  header .encabezado h1 strong::before {
+    display: none;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 300px top no-repeat, #00212A;
+  }
+  #candidatos .col01 {
+    width: 34%;
+    height: 450px;
+    padding-top: 75px;
+    padding-right: 20px;
+  }
+  #candidatos .col01 h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  #candidatos .col01 p {
+    font-size: 16px;
+  }
+  #candidatos .col02 {
+    width: 30%;
+  }
+  #candidatos .col03 {
+    width: 30%;
+  }
+  #candidatos .col03 h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  header .encabezado {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  header .encabezado .columna.titulo {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  header .encabezado .columna.grafico {
+    width: 100%;
+    text-align: center;
+  }
+  header .encabezado h1 {
+    margin-top: 0;
+  }
+  header .encabezado h1 strong {
+    display: inline;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 250px top no-repeat, #00212A;
+  }
+  #candidatos .col01 {
+    width: 30%;
+    height: 450px;
+    padding-top: 75px;
+    padding-right: 20px;
+  }
+  #candidatos .col01 h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  #candidatos .col01 p {
+    font-size: 16px;
+  }
+  #candidatos .col02 {
+    width: 30%;
+  }
+  #candidatos .col03 {
+    width: 30%;
+  }
+  #candidatos .col03 h4 {
+    font-size: 18px;
+  }
+  #about {
+    background: right bottom no-repea #f3fcff;
+    padding: 0px 0px;
+  }
+  #about .col01 {
+    width: 40%;
+    text-align: left;
+  }
+  #about .col02 {
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  #about .col03 {
+    width: 100%;
+    text-align: left;
+    background: #FFFFFF;
+    height: 450px;
+    padding: 0 50px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 1000px) {
+  #about .col02 br {
+    display: none;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 250px top no-repeat, #00212A;
+  }
+  #candidatos .col01 {
+    width: 40%;
+    height: 450px;
+    padding-top: 75px;
+    padding-right: 30px;
+  }
+  #candidatos .col01 h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  #candidatos .col01 p {
+    font-size: 16px;
+  }
+  #candidatos .col02 {
+    width: 0%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #candidatos .col03 {
+    width: 60%;
+  }
+  #candidatos .col03 h4 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 800px) {
+  header .encabezado .columna.grafico svg {
+    width: 460px;
+    height: 450px;
+  }
+  #candidatos {
+    background: url(../diversidad-e-inclusion/images/candidata-bg.jpg) 250px top no-repeat, #00212A;
+    background-size: cover;
+  }
+  #candidatos .col01 {
+    width: 40%;
+    height: 500px;
+    padding-top: 75px;
+    padding-right: 30px;
+  }
+  #candidatos .col01 h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  #candidatos .col01 p {
+    font-size: 16px;
+  }
+  #candidatos .col02 {
+    width: 0%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #candidatos .col03 {
+    width: 60%;
+    height: 500px;
+  }
+  #candidatos .col03 h4 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 700px) {
+  #candidatos {
+    background-size: 200%;
+    background-position: left 180%;
+  }
+  #candidatos .container {
+    padding: 0px !important;
+  }
+  #candidatos .col01 {
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+  }
+  #candidatos .col03 {
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+  }
+  #candidatos .col03 h4 {
+    font-size: 48px;
+    line-height: 80.56px;
+  }
+  #about {
+    background: right bottom no-repea #f3fcff;
+    padding: 0px 0px;
+  }
+  #about .col01 {
+    width: 50%;
+    margin-left: 25%;
+  }
+  #about .col02 {
+    width: 90%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  #about .col03 {
+    width: 100%;
+    text-align: left;
+    background: #FFFFFF;
+    height: 450px;
+    padding: 0 50px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 600px) {
+  header .encabezado h1 {
+    font-size: 60px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 500px) {
+  #about .col01 svg {
+    width: 100%;
+    height: 250px;
+  }
+  #candidatos {
+    background-size: 250%;
+    background-position: left 100%;
+  }
+  #candidatos .col03 h4 {
+    font-size: 36px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 400px) {
+  header .encabezado .columna.grafico svg {
+    height: 313px;
+  }
+}

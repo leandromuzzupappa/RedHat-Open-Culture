@@ -1,0 +1,1037 @@
+@color_1: #FFFFFF;
+@color_2: #D60707;
+@color_3: #3D5156;
+@color_4: #cc0000;
+@color_5: #004254;
+@color_6: #566D72;
+@color_7: #004254;
+@color_8: #B50000;
+@color_9: #000000;
+@color_10: #00212A;
+@celeste-claro: #A3DBE8;
+
+@background_color_1: rgba(188,28,42,1);
+@background_color_2: rgba(0,33,42,1);
+
+/* HEADER */
+@keyframes rotacion {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotacionreversa {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+@keyframes escala {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(1.14);
+	}
+	20% {
+		transform: scale(1);
+	}
+}
+@keyframes escala2 {
+	0% {
+		transform: scale(1);
+	}
+	5% {
+		transform: scale(1);
+	}
+	15% {
+		transform: scale(1.07);
+	}
+	25% {
+		transform: scale(1);
+	}
+}
+@keyframes corazon {
+	0% {
+		transform: translateY(0px);
+	}
+	20% {
+		transform: translateY(5px);
+	}
+	40% {
+		transform: translateY(-20px);
+	}
+	60% {
+		transform: translateY(0px);
+	}
+}
+
+
+header {
+	background: center no-repeat #001d26;
+	background-size: cover;
+	background-attachment: fixed;
+	.encabezado {
+		padding: 0 0 20px;
+		h1 {
+			font-size: 111px;
+			letter-spacing: 5.55px;
+			line-height: 0.9em;
+			color: @color_1;
+			font-weight: 900;
+			margin-top: -60px;
+			strong {
+				display: block;
+				color: @color_2;
+				position: relative;
+				font-weight: 900;
+				&::before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					width: 90px;
+					height: 3px;
+					background: #D60707;
+					margin-right: 25px;
+					margin-top: -15px;
+				}
+			}
+		}
+		.columna.titulo {
+			width: 40%;
+            text-align: left;
+            p {
+				font-family : 'Overpass',sans-serif;
+  				font-size : 19px;
+ 				line-height : 32px;
+  				letter-spacing : 0.95px;
+  				color : @color_1;
+			}
+		}
+		.columna.grafico {
+			width: 60%;
+			text-align: right;
+			svg {
+				width: 840px;
+				height: 620px;
+				.st0 {
+					fill: #000000;
+					opacity: 0.2;
+					transform-origin: 420px 290px;
+					-webkit-animation-name: escala;
+					-webkit-animation-duration: 5s;
+					animation-name: escala;
+					animation-duration: 5s;
+					animation-iteration-count: infinite;
+					-webkit-animation-name: escala2;
+					animation-name: escala2;
+				}
+				.st1 {
+					fill: #000000;
+					opacity: 0.2;
+					transform-origin: 420px 290px;
+					-webkit-animation-name: escala;
+					-webkit-animation-duration: 5s;
+					animation-name: escala;
+					animation-duration: 5s;
+					animation-iteration-count: infinite;
+				}
+				.st2 {
+					fill: #CC0000;
+				}
+				.st3 {
+					fill: #B50000;
+				}
+				.st4 {
+					fill: #A3DBE8;
+				}
+				.st5 {
+					fill: #FFFFFF;
+				}
+				.st6 {
+					fill: #004254;
+				}
+				.st7 {
+					fill: #E8F6F9;
+				}
+				.st8 {
+					opacity: 0.24;
+					fill: #7AA4AE;
+				}
+				.st9 {
+					fill: #D1EDF4;
+				}
+				.st10 {
+					fill: #00212A;
+				}
+				.st11 {
+					fill-rule: evenodd;
+					clip-rule: evenodd;
+					fill: #CC0000;
+				}
+				.st12 {
+					fill-rule: evenodd;
+					clip-rule: evenodd;
+					fill: #960000;
+				}
+				.st13 {
+					fill-rule: evenodd;
+					clip-rule: evenodd;
+					fill: #FFFFFF;
+				}
+				.st14 {
+					fill-rule: evenodd;
+					clip-rule: evenodd;
+					fill: #E6E6E6;
+				}
+				.st15 {
+					fill: #001115;
+				}
+				.st16 {
+					fill: #F2F2F2;
+				}
+			}
+			.engranaje01 {
+				transform-origin: 603px 312px;
+				-webkit-animation-name: rotacionreversa;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacionreversa;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.engranaje02 {
+				transform-origin: 437px 187px;
+				-webkit-animation-name: rotacion;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacion;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.engranaje03 {
+				transform-origin: 518px 141px;
+				-webkit-animation-name: rotacionreversa;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacionreversa;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.engranaje04 {
+				transform-origin: 159px 347px;
+				-webkit-animation-name: rotacionreversa;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacionreversa;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.engranaje05 {
+				transform-origin: 802px 235px;
+				-webkit-animation-name: rotacionreversa;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacionreversa;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.engranaje06 {
+				transform-origin: 108px 170px;
+				-webkit-animation-name: rotacion;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacion;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+		}
+	}
+}
+
+#about {
+	background: right bottom no-repea #f3fcff;
+    padding: 0px 0px;
+    
+	.col01 {
+		width: 30%;
+        text-align: left;
+        padding: 0px 40px;
+		p {
+            font-family: 'Overpass', sans-serif;
+            font-size : 22px;
+            line-height : 36px;
+            letter-spacing : 0.88px;
+            font-weight: 100;
+            color: @color_3;
+            strong {
+                font-weight: 700;
+                color: @color_4;
+            }
+        }
+	}
+	.col02 {
+		width: 33%;
+		text-align: left;
+        padding: 0px 40px;
+		p {
+            font-size : 18px;
+            line-height : 30px;
+            letter-spacing : 0.9px;
+            font-weight: 100;
+            color: @color_3;
+            strong {
+                font-weight: 700;
+                color: @color_5;
+            }
+		}
+	}
+	.col03 {
+		width: 35%;
+		text-align: left;
+		background: @color_1;
+		height: 450px;
+		padding: 0 20px;
+		padding-top: 100px;
+		svg {
+            display: inline-block;
+            width: 40%;
+			padding: 0px 20px;
+			
+			#engrane1 {
+				transform-origin: 27% 24%;
+				-webkit-animation-name: rotacionreversa;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacionreversa;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			#engrane2 {
+				transform-origin: 79% 83%;
+				-webkit-animation-name: rotacion;
+				-webkit-animation-duration: 7s;
+				animation-name: rotacion;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			#c {
+				transform-origin: 0% 0%;
+				-webkit-animation-name: corazon;
+				-webkit-animation-duration: 7s;
+				animation-name: corazon;
+				animation-duration: 7s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+		}
+		p {
+            width: 60%;
+            display: inline-block;
+            font-size : 19px;
+            line-height : 31px;
+            letter-spacing : 0.76px;
+			color: @color_3;
+			font-weight: 300;
+			strong {
+				color: @color_4;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+#destacados {
+	padding: 100px 0;
+	background: center repeat;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	
+
+	h3 {
+		font-family : 'Overpass',sans-serif;
+		font-size : 30px;
+		line-height : 60.48px;
+		letter-spacing : 2.25px;
+		text-transform : uppercase;
+		color: @color_1;
+		padding-left: 25px;
+		font-weight: 900;
+	} 
+	
+	#contenedor {
+		width: 100%;
+		padding-left: 180px;
+		margin: auto;
+		text-align: left;
+		position: relative;
+		box-sizing: border-box;
+		
+	}
+	.destacadostabla {
+		display: table;
+		border-collapse: separate;
+		position: relative;
+		transition: all 0.3s;
+		
+	}
+	.bloquecontainer {
+		display: inline-block;
+		vertical-align: middle;
+		width: 486px;
+		min-height: 500px;
+		box-sizing: border-box;
+		vertical-align: top;
+		position: relative;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+		.info {
+			padding: 10px 50px;
+			vertical-align: middle;
+			background: @color_1;
+			h4 {
+				font-size: 20px;
+				line-height: 31.23px;
+				letter-spacing: 0.5px;
+				color: @color_5;
+				font-weight: 800;
+				strong {
+					font-weight: 800;
+					color: @color_4;
+				}
+			}
+			p {
+				font-size: 14px;
+				line-height: 23px;
+				min-height: 155px;
+				letter-spacing: 0.32px;
+				color: @color_3;
+				font-weight: 300;
+			}
+			a {
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 16px;
+				letter-spacing: 0.4px;
+				text-transform: uppercase;
+				color: @color_1;
+				background: #cc0000;
+				box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+				font-weight: 600;
+				transition: all 0.3s;
+				margin-bottom: 20px;
+				&:hover {
+					background: #000000;
+				}
+			}
+		}
+		.slider-img {
+			width: 100%;
+			height: 250px;
+			background: @color_6;
+		}
+
+		/*DESTACADOS PORTADAS*/
+		#destacados-portada-1 {
+			background: url(../open-heart/images/slider/01.jpg) center center no-repeat; background-size: cover;
+		}
+		#destacados-portada-2 {
+			background: url(../open-heart/images/slider/02.jpg) center center no-repeat; background-size: cover;
+		}
+		#destacados-portada-3 {
+			background: url(../open-heart/images/slider/03.jpg) center center no-repeat; background-size: cover;
+		}
+	}
+
+	.slider-botones {
+		button {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			position: relative;
+			z-index: 999;
+			background: @color_9;
+			stroke: @color_1;
+			border: 0px;
+			border-radius: 100px;
+			transition: .1s;
+			svg {
+				vertical-align: top;
+				text-align: left;
+			}
+			&:hover {
+				background: @color_1;
+				stroke: @color_2;
+				box-shadow: 0px 0px 20px 0px fade(@color_9,30);
+			}
+		}
+	}
+	.slider-atras {
+		position: absolute;
+		top: 45%;
+		left: 2%;
+	}
+	.slider-adelante {
+		position: absolute;
+		top: 45%;
+		right: 2%;
+	}
+}
+
+#candidatos {
+	background: url(../open-heart/images/candidata-bg.jpg) 750px top no-repeat, @color_10;
+	background-size: contain, cover;
+	padding: 0px 0px;
+	.col01 {
+		width: 33%;
+		text-align: left;
+		background: @color_10;
+		
+		h3 {
+			font-family : 'Overpass', sans-serif;
+			font-size : 41px;
+			line-height: 49,2px;
+			letter-spacing : 2.05px;
+			font-weight: 900;
+			color: @color_1;
+			strong {
+				color: @color_4;
+			}
+		}
+		p {
+			font-family : 'Overpass',sans-serif;
+  			font-size : 19px;
+  			line-height : 30px;
+			letter-spacing : 0.76px;
+			color: @color_1;
+		}
+	}
+	.col02 {
+		width: 33%;
+		text-align: left;
+		margin-left: 20px;
+		margin-right: 40px;
+		p {
+			&:first-child {
+				font-size: 16px;
+				line-height: 30px;
+				letter-spacing: 0.8px;
+				color: @color_3;
+				font-weight: 300;
+				strong {
+					color: @color_4;
+					font-weight: 700;
+				}
+			}
+			&:last-child {
+				font-size: 16px;
+				line-height: 30px;
+				letter-spacing: 0.8px;
+				color: @color_6;
+				font-weight: 300;
+				strong {
+					color: @color_7;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.col03 {
+		width: 25%;
+		text-align: left;
+		background: fade(@celeste-claro,70);
+		height: 450px;
+		padding: 0 50px;
+		padding-top: 142px;
+
+		h4 {
+			font-family: 'Overpass', sans-serif;
+			font-size: 29px;
+			line-height: 53.17px;
+			letter-spacing: 2.17px;
+			text-transform: uppercase;
+			color: @color_1;
+			font-weight: 900;
+			margin-left: 15px;
+			span {
+				display: inline;
+				background: @color_7;
+				padding: 9px 0px 6px;
+				box-shadow: 15px 0 0  @color_7, -15px 0 0  @color_7;
+				box-decoration-break: clone;
+			}
+		}
+		a {
+			display: inline-block;
+			background: @color_2;
+			font-family: 'Overpass', sans-serif;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.38px;
+			text-transform: uppercase;
+			color: @color_1;
+			padding: 10px 15px;
+			margin-top: 15px;
+			font-weight: 600;
+			transition: all 0.1s;
+			box-shadow: 3px 3px 0 0 rgba(0,0,0,0.15);
+			&:hover {
+				background: #000000;
+				color: @color_2;
+			}
+		}
+	}
+}
+
+@media (max-width: 1600px) {	
+}
+@media (max-width: 1500px) {
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 500px top no-repeat, @color_10;
+		.col01 {
+			width: 28%;
+			
+			h3 { font-size : 36px; line-height: 36px;}
+			p { font-size : 16px;}
+		}
+		.col03 {	
+			h4 { font-size: 26px;}
+		}
+	}
+}
+@media (max-width: 1400px) {
+	header {
+		.encabezado {
+			h1 {
+				font-size: 90px;
+			}
+		}
+	}
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 450px top no-repeat, @color_10; background-size: 100%;
+		.col03 {	
+			h4 { font-size: 24px;}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	header {
+		.encabezado {
+			h1 {
+				strong {
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 300px top no-repeat, @color_10; background-size: 120%;
+		.col01 {
+			width: 34%; height: 450px; padding-top: 75px; padding-right: 20px;
+			
+			h3 { font-size : 36px; line-height: 36px;}
+			p { font-size : 16px;}
+		}
+		.col02 {
+			width: 30%;
+		}
+		.col03 {	
+			width: 30%;
+			h4 { font-size: 18px;}
+		}
+	}
+
+}
+@media (max-width: 1100px) {
+	#about {
+		.container {
+			padding-right: 0px !important;
+		}
+		
+		.col01 {
+			padding: 0px 20px;
+			p {
+				font-size : 20px;
+				line-height : 28px;
+			}
+		}
+		.col02 {
+			padding: 0px 20px;
+			p {
+				font-size : 16px;
+				line-height : 28px;
+			}
+		}
+		.col03 {
+			padding: 0 20px;
+			padding-top: 100px;
+			img {
+				width: 50%;
+				padding: 0px 20px;
+				position: relative;
+				bottom: 80px;
+			}
+			p {
+				width: 50%;
+				font-size : 16px;
+				line-height : 28px;
+			}
+		}
+	}
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 250px top no-repeat, @color_10; background-size: 125%;
+		.col01 {
+			width: 30%; height: 450px; padding-top: 75px; padding-right: 20px;
+			
+			h3 { font-size : 36px; line-height: 36px;}
+			p { font-size : 16px;}
+		}
+		.col02 {
+			width: 30%;
+		}
+		.col03 {	
+			width: 30%;
+			h4 { font-size: 18px;}
+		}
+	}
+}
+@media (max-width: 1000px) {
+	header {
+		.encabezado {
+			.columna.titulo {
+				width: 100%;
+				text-align: left;
+				margin-bottom: 40px;
+			}
+			.columna.grafico {
+				width: 100%;
+				text-align: center;
+				svg {
+					width: 450px;
+					height: 387px;
+				}
+			}
+			h1 {
+				margin-top: 0;
+				strong {
+					display: inline;
+				}
+			}
+		}
+	}
+	#about {
+		background: right bottom no-repea #f3fcff;
+		padding: 0px 0px;
+		
+		.container {
+			padding: 0px !important;
+		}
+
+		.col01 {
+			width: 50%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-family: 'Overpass', sans-serif;
+				font-size : 22px;
+				line-height : 36px;
+				letter-spacing : 0.88px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_4;
+				}
+			}
+		}
+		.col02 {
+			width: 50%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-size : 18px;
+				line-height : 30px;
+				letter-spacing : 0.9px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_5;
+				}
+			}
+		}
+		.col03 {
+			width: 100%;
+			text-align: left;
+			background: @color_1;
+			height: 230px;
+			padding: 0 100px;
+			padding-top: 0px;
+			img {
+				display: inline-block;
+				width: 25%;
+				padding: 0px 20px;
+				position: relative;
+				top: 30px;
+			}
+			p {
+				width: 75%;
+				display: inline-block;
+				font-size : 19px;
+				line-height : 31px;
+				letter-spacing : 0.76px;
+				color: @color_3;
+				font-weight: 300;
+				strong {
+					color: @color_4;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 250px top no-repeat, @color_10;background-size: 150%;
+		.col01 {
+			width: 40%; height: 450px; padding-top: 75px; padding-right: 30px;
+			
+			h3 { font-size : 36px; line-height: 36px;}
+			p { font-size : 16px;}
+		}
+		.col02 {
+			width: 0%;
+			padding: 0px;
+			margin: 0px;
+		}
+		.col03 {	
+			width: 60%;
+			h4 { font-size: 29px;}
+		}
+	}
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 800px) {
+	#candidatos {
+		background: url(../open-heart/images/candidata-bg.jpg) 250px top no-repeat, @color_10; background-size: cover;
+		.col01 {
+			width: 40%; height: 500px; padding-top: 75px; padding-right: 30px;
+			
+			h3 { font-size : 36px; line-height: 36px;}
+			p { font-size : 16px;}
+		}
+		.col02 {
+			width: 0%;
+			padding: 0px;
+			margin: 0px;
+		}
+		.col03 {	
+			width: 60%;
+			height: 500px;
+			h4 { font-size: 29px;}
+		}
+	}
+}
+@media (max-width: 700px) {
+	#candidatos {
+		background-size: 200%; background-position: left 180%;
+		.container {
+			padding: 0px !important;
+		}
+		.col01 {
+			width: 100%;
+			height: auto;
+			padding: 50px 50px;
+		}
+		.col03 {
+			width: 100%; height: auto;
+			padding: 50px 50px;
+			h4 {
+				font-size: 48px;
+				line-height: 80.56px;
+			}
+		}
+	}
+}
+@media (max-width: 600px) {
+	header {
+		.encabezado {
+			h1 {
+				font-size: 60px;
+				letter-spacing: 0;
+			}
+		}
+	}
+	#about {
+		background: right bottom no-repea #f3fcff;
+		padding: 0px 0px;
+		
+		.container {
+			padding: 0px !important;
+		}
+
+		.col01 {
+			width: 100%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-family: 'Overpass', sans-serif;
+				font-size : 22px;
+				line-height : 36px;
+				letter-spacing : 0.88px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_4;
+				}
+			}
+		}
+		.col02 {
+			width: 100%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-size : 18px;
+				line-height : 30px;
+				letter-spacing : 0.9px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_5;
+				}
+			}
+		}
+		.col03 {
+			width: 100%;
+			text-align: left;
+			background: @color_1;
+			height: 200px;
+			padding: 0 20px;
+			padding-top: 0px;
+			margin-top: 30px;
+			img {
+				display: inline-block;
+				width: 25%;
+				padding: 0px 20px;
+				position: relative;
+				top: 0px;
+			}
+			p {
+				width: 75%;
+				display: inline-block;
+				font-size : 19px;
+				line-height : 31px;
+				letter-spacing : 0.76px;
+				color: @color_3;
+				font-weight: 300;
+				strong {
+					color: @color_4;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	header {
+		.encabezado {
+			.columna.grafico {
+				svg {
+					width: 320px;
+					height: 276px;
+				}
+			}
+		}
+	}
+	#about {
+		background: right bottom no-repea #f3fcff;
+		padding: 0px 0px;
+		
+		.container {
+			padding: 0px !important;
+		}
+
+		.col01 {
+			width: 100%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-family: 'Overpass', sans-serif;
+				font-size : 22px;
+				line-height : 36px;
+				letter-spacing : 0.88px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_4;
+				}
+			}
+		}
+		.col02 {
+			width: 100%;
+			text-align: left;
+			padding: 0px 40px;
+			p {
+				font-size : 18px;
+				line-height : 30px;
+				letter-spacing : 0.9px;
+				font-weight: 100;
+				color: @color_3;
+				strong {
+					font-weight: 700;
+					color: @color_5;
+				}
+			}
+		}
+		.col03 {
+			width: 100%;
+			text-align: left;
+			background: @color_1;
+			height: auto;
+			padding: 0 20px;
+			padding-top: 20px;
+			margin-top: 30px;
+			img {
+				display: inline-block;
+				width: 40%;
+				padding: 0px 20px;
+				position: relative;
+				top: 0px;
+			}
+			p {
+				width: 100%;
+				display: inline-block;
+				font-size : 19px;
+				line-height : 31px;
+				letter-spacing : 0.76px;
+				color: @color_3;
+				font-weight: 300;
+				strong {
+					color: @color_4;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	#candidatos {
+		background-size: 250%; background-position: left 100%;
+		.col03 {
+			h4 {
+				font-size: 36px;
+				line-height: 60px
+			}
+		}
+	}
+
+}
